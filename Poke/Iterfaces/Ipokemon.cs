@@ -1,6 +1,6 @@
 namespace Poke.Iterfaces;
 
-public class ItypePokemon
+public class Ipokemon
 {
     
 }
