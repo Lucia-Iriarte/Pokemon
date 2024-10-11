@@ -1,13 +1,13 @@
 namespace Poke.Iterfaces;
 
-public interface IAtaque
+
+public interface IAtaque 
 {
     // Atributos
     string Name { get; set; }
     int Danio { get; set; }
-    string Type { get; set; } // Habria que relacionarlo con Itype!!!
+    IType.PokemonType Type { get; set; } 
     bool EsEspecial { get; set; }
-    
-    // Metodos
-    void CalcularDanio();
+   
+    void CalcularDanio(Pokemon atacante, Pokemon defensor); //metodo
 }

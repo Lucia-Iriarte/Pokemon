@@ -2,9 +2,16 @@ namespace Poke.Iterfaces;
 
 public interface IType
 {
+    // enum de tipos de poke
     public enum PokemonType
     {
-        // Aca irian los tipos de pokemones, ej: fuego, agua, aire, etc
+        Fuego,
+        Agua,
+        Aire,
+        Tierra,
+        Dragon,
+        Hada
     }
-    void Ventajas();
+    
+    void Ventajas(PokemonType tipo);
 }

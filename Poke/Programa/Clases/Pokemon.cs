@@ -2,7 +2,7 @@ using Poke.Iterfaces;
 
 namespace Poke.Clases;
 
-public class Pokemon : IPokemon
+public class  Pokemon : IPokemon
 {
 
     public string Name { get; set; }
