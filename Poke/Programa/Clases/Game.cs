@@ -1,6 +1,6 @@
 namespace Poke.Clases;
 
-public class Juego
+public class Game
 {
     private Pokemon pokemonJugador;
 

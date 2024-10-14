@@ -1,6 +1,6 @@
 namespace Poke.Clases;
 
-public class Jugador
+public class Player
 {
     // Atributos privados
     private List<Pokemon> Pokemones;
