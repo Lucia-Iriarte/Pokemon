@@ -1,6 +1,6 @@
-namespace Unit_Tests;
+namespace Unit_Test;
 
-public class Tests
+public class Jugador_Test
 {
     [SetUp]
     public void Setup()
