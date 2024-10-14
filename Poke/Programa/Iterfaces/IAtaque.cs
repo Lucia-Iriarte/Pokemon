@@ -1,3 +1,5 @@
+using Poke.Clases;
+
 namespace Poke.Iterfaces;
 
 

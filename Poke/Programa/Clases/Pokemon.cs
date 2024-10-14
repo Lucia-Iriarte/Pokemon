@@ -4,29 +4,24 @@ namespace Poke.Clases;
 
 public class  Pokemon : IPokemon
 {
-
-    public string Name { get; set; }
-    public int HP { get; set; }
+    private string nombre;
+    private int hp;
+    private Type tipo;
+    public int ataque;
+    private List<string> listaDeAtaques;
     
-    public string Type { get; set; }
+    public string Nombre { get; set; }
+    public int Hp { get; set; }
+    public Type Tipo { get; set; }
     public int Ataque { get; set; }
-    
-    private List<string> ListaDeAtaques = new List<string>();
-    
+    public List<Ataque> ListaDeAtaques { get; set; }
     public Pokemon(string nombre, int salud, int ataque)
     {
-        Name = nombre;
-        HP = salud;
-        Ataque = ataque;
     }
 
     public string EstaVivo()
     {
-        if (this.HP > 0)
-        {
-            return $"Tu pokemon {this.Name} esta vivo!";
-        }
-        return $"Tu pokemon {this.Name} esta muerto!";
+        return null;
     }
 
     public void Atacar()
@@ -42,5 +37,10 @@ public class  Pokemon : IPokemon
     public void AddAtaque(string nuevoAtaque)
     {
         ListaDeAtaques.Add(nuevoAtaque);
+    }
+    
+    public void AddHP(int hp)
+    {
+        Hp += hp;
     }
 }
