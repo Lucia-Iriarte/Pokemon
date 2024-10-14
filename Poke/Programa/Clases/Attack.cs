@@ -1,10 +1,10 @@
 namespace Poke.Clases;
 
-public class Ataque
+public class Attack
 {
     private string nombre;
 
-    private int danio;
+    private int daño;
 
     private Type tipo;
 
@@ -12,7 +12,7 @@ public class Ataque
     
     public string Nombre { get; set; }
     public string Tipo { get; set; }
-    public double Danio { get; set; }
+    public double Daño { get; set; }
     public bool EsEspecial { get; set; }
 
     public Ataque(string nombre, string tipo, double danio, bool esEspecial)

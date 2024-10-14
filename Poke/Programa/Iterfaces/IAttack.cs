@@ -3,7 +3,7 @@ using Poke.Clases;
 namespace Poke.Iterfaces;
 
 
-public interface IAtaque
+public interface IAttack
 {
     void CalcularDanio(Pokemon atacante, Pokemon defensor); 
 }

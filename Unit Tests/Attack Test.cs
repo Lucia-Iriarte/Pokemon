@@ -1,6 +1,6 @@
 namespace Unit_Test;
 
-public class Ataque_Test
+public class Attack_Test
 {
     [SetUp]
     public void Setup()

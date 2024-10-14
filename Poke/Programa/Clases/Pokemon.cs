@@ -48,9 +48,9 @@ public class  Pokemon : IPokemon
         return null;
     }
 
-    public Type GetTipo()
+    public Type GetType()
     {
-        return tipo;
+        return type;
     }
 
     public double GetHp()
