@@ -7,7 +7,6 @@ public class  Pokemon : IPokemon
     private string nombre;
     private int hp;
     private Type tipo;
-    public int ataque;
     private List<string> listaDeAtaques;
     
     public string Nombre { get; set; }
@@ -29,12 +28,12 @@ public class  Pokemon : IPokemon
         // Metodo para atacar
     }
 
-    public void RecibirDanio()
+    public void RecibirDanio(double danio)
     {
         // Metodo para reducir la vida del pokemon cuando es atacado
     }
 
-    public void AddAtaque(string nuevoAtaque)
+    public void AddAtaque(Ataque nuevoAtaque)
     {
         ListaDeAtaques.Add(nuevoAtaque);
     }
@@ -42,5 +41,20 @@ public class  Pokemon : IPokemon
     public void AddHP(int hp)
     {
         Hp += hp;
+    }
+
+    public List<Ataque> GetAtaques()
+    {
+        return null;
+    }
+
+    public Type GetTipo()
+    {
+        return tipo;
+    }
+
+    public double GetHp()
+    {
+        return hp;
     }
 }

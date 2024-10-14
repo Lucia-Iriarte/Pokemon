@@ -2,6 +2,11 @@ namespace Poke.Clases;
 
 public class Juego
 {
+    private Pokemon pokemonJugador;
+
+    private Pokemon pokemonOponente;
+
+    private int turnoActual;
     // Constructor
     public Pokemon PokemonJugador { get; set; }
     public Pokemon PokemonOponente { get; set; }
