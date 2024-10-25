@@ -7,8 +7,8 @@ public interface IPokemon
     string EstaVivo();
     void Atacar();
     void RecibirDanio(double danio);
-    void AddAtaque(Ataque nuevoAtaque);
-    List<Ataque> GetAtaques();
+    void AddAtaque(Attack nuevoAtaque);
+    List<Attack> GetAtaques();
     Clases.Type GetTipo();
     double GetHp();
 }

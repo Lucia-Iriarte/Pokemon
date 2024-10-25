@@ -7,7 +7,7 @@ public class Player
     private Pokemon PokemonActual;
 
     // Constructor
-    public Jugador()
+    public Player()
     {
     }
 

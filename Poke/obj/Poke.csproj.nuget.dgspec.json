@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\p2repos\\trabajos grupales\\Pokemon\\Poke\\Poke.csproj": {}
+    "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\Poke.csproj": {}
   },
   "projects": {
-    "C:\\p2repos\\trabajos grupales\\Pokemon\\Poke\\Poke.csproj": {
+    "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\Poke.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\p2repos\\trabajos grupales\\Pokemon\\Poke\\Poke.csproj",
+        "projectUniqueName": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\Poke.csproj",
         "projectName": "Poke",
-        "projectPath": "C:\\p2repos\\trabajos grupales\\Pokemon\\Poke\\Poke.csproj",
+        "projectPath": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\Poke.csproj",
         "packagesPath": "C:\\Users\\Estudiante UCU\\.nuget\\packages\\",
-        "outputPath": "C:\\p2repos\\trabajos grupales\\Pokemon\\Poke\\obj\\",
+        "outputPath": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Estudiante UCU\\AppData\\Roaming\\NuGet\\NuGet.Config"

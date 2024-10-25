@@ -12,14 +12,14 @@ public class Game
     public Pokemon PokemonOponente { get; set; }
     public int TurnoActual { get; set; }
 
-    public Juego(Pokemon pokemonJugador, Pokemon pokemonOponente)
+    public Game(Pokemon pokemonJugador, Pokemon pokemonOponente)
     {
         PokemonJugador = pokemonJugador;
         PokemonOponente = pokemonOponente;
         TurnoActual = 1;
     }
 
-    public void JugarTurno(Ataque ataqueJugador, Ataque ataqueOponente /* aclarar que se puede atacar
+    public void JugarTurno(Attack ataqueJugador, Attack ataqueOponente /* aclarar que se puede atacar
      y/o cambiar de pokemon en el turno, no solamente atacar */ )
     {
         // Metodo para atacar/recibir daño

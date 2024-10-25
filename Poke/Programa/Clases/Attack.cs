@@ -15,12 +15,12 @@ public class Attack
     public double Daño { get; set; }
     public bool EsEspecial { get; set; }
 
-    public Ataque(string nombre, string tipo, double danio, bool esEspecial)
+    public Attack (string nombre, int daño, Type tipo, bool esEspecial)
     {
-        Nombre = nombre;
-        Tipo = tipo;
-        Danio = danio;
-        EsEspecial = esEspecial;
+        this.nombre = nombre;
+        this.daño = daño;
+        this.tipo = tipo;
+        this.esEspecial = esEspecial;
     }
     
     public double? calcularDanio(Pokemon atacante, Pokemon defensor)

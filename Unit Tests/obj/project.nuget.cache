@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wYWouKQKJuVhaXBrkzSStkHcl0vKBW7z62cajk2v3r3/xX8QZ7kkWR76qN1Gnfy7u4KTN63x0U/uQKsqs6ggIQ==",
+  "dgSpecHash": "SM/baiHtY6F6r7KLxOLM69LF9y/gYvA3xEZLJHCeqnzIiWawwp5zCXIEUQec4NJBRuGzc9VH4rAxNuulDaA/Ow==",
   "success": true,
-  "projectFilePath": "C:\\Repositorios P2\\Pokemon2\\Unit Tests\\Unit Tests.csproj",
+  "projectFilePath": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Unit Tests\\Unit Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Estudiante UCU\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Estudiante UCU\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

@@ -987,11 +987,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorios P2\\Pokemon2\\Unit Tests\\Unit Tests.csproj",
+      "projectUniqueName": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Unit Tests\\Unit Tests.csproj",
       "projectName": "Unit Tests",
-      "projectPath": "C:\\Repositorios P2\\Pokemon2\\Unit Tests\\Unit Tests.csproj",
+      "projectPath": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Unit Tests\\Unit Tests.csproj",
       "packagesPath": "C:\\Users\\Estudiante UCU\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorios P2\\Pokemon2\\Unit Tests\\obj\\",
+      "outputPath": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Unit Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Estudiante UCU\\AppData\\Roaming\\NuGet\\NuGet.Config"
