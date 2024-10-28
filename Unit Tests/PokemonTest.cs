@@ -1,8 +1,8 @@
 namespace Unit_Tests;
 
-public class Pokemon Test
-{
-    [SetUp]
+[TestFixture]
+public class PokemonTest
+{ [SetUp]
     public void Setup()
     {
     }
