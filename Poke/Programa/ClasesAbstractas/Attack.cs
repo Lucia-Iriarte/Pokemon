@@ -6,7 +6,7 @@ public abstract class Attack
 
     private int daño;
 
-    private Type tipo;
+    private string Type;
 
     private bool esEspecial;
     
@@ -14,14 +14,6 @@ public abstract class Attack
     public string Tipo { get; set; }
     public double Daño { get; set; }
     public bool EsEspecial { get; set; }
-
-    public Attack (string nombre, int daño, Type tipo, bool esEspecial)
-    {
-        this.nombre = nombre;
-        this.daño = daño;
-        this.tipo = tipo;
-        this.esEspecial = esEspecial;
-    }
     
     public double? CalcularDanio(Pokemon atacante, Pokemon defensor)
     {
