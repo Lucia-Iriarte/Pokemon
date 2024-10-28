@@ -5,10 +5,27 @@ public class Player
     // Atributos privados
     private List<Pokemon> Pokemones;
     private Pokemon PokemonActual;
+    private List<Items> Items;
 
     // Constructor
     public Player()
     {
+        Pokemones = new List<Pokemon>();
+        this.PokemonActual = PokemonActual;
+        
+        Items = new List<Items>();
+        // Agrego los items
+        
+        Items.Add(new SuperPocion());
+        Items.Add(new SuperPocion());
+        Items.Add(new SuperPocion());
+        Items.Add(new SuperPocion());
+        
+        Items.Add(new CuraTotal());
+        Items.Add(new CuraTotal());
+        
+        Items.Add(new RevivirPocion());
+        
     }
 
     // Método para seleccionar un Pokémon

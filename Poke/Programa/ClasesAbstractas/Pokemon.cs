@@ -31,7 +31,14 @@ public abstract class  Pokemon
 
     public void AddAtaque(Attack nuevoAtaque)
     {
-        ListaDeAtaques.Add(nuevoAtaque);
+        if (ListaDeAtaques.Count < 4)
+        {
+            ListaDeAtaques.Add(nuevoAtaque);
+        }
+        else
+        {
+            Console.WriteLine("No se pueden agregar más ataques, el límite es 4");
+        }
     }
     public void RecibirDanio(double danio)
     {
