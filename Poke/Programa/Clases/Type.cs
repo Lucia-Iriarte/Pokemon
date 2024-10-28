@@ -1,4 +1,4 @@
-using Poke.Iterfaces;
+using Poke.Clases;
 namespace Poke.Clases;
 
 public class Type

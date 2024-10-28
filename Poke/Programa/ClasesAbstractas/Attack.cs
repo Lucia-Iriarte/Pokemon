@@ -1,6 +1,6 @@
 namespace Poke.Clases;
 
-public class Attack
+public abstract class Attack
 {
     private string nombre;
 
@@ -23,7 +23,7 @@ public class Attack
         this.esEspecial = esEspecial;
     }
     
-    public double? calcularDanio(Pokemon atacante, Pokemon defensor)
+    public double? CalcularDanio(Pokemon atacante, Pokemon defensor)
     {
         return null;
     }

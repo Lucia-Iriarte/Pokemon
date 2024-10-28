@@ -1,8 +1,8 @@
-using Poke.Iterfaces;
+using Poke.Clases;
 
 namespace Poke.Clases;
 
-public class  Pokemon : IPokemon
+public abstract class  Pokemon
 {
     private string nombre;
     private int hp;
