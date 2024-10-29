@@ -10,7 +10,8 @@ public class  Pokemon
     private List<string> listaDeAtaques;
     public string Nombre { get; set; }
     private int capacidadDeAtacar;
-    public int Hp { get; set; }
+    public string estado;
+    public double Hp { get; set; }
     public Type Tipo { get; set; }
     public int Ataque { get; set; }
     public List<Attack> ListaDeAtaques { get; set; }
@@ -22,11 +23,12 @@ public class  Pokemon
     public bool Envenenado { get; set; }
     public bool Quemado { get; set; }
     
-    public Pokemon(string nombre, int salud, int ataque, int capacidadDeAtacar)
+    public Pokemon(string nombre, int salud, int ataque, int capacidadDeAtacar, string estado)
     {
         this.nombre = nombre;
         this.hp = salud;
         this.Ataque = ataque;
+        this.estado = estado;
         this.capacidadDeAtacar = 1;
     }
     
@@ -44,7 +46,7 @@ public class  Pokemon
         }
         else
         {
-            Console.WriteLine($"{this.Nombre} no puede atacar en este turno ya que esta Paralizado");
+            Console.WriteLine($"{this.Nombre} no puede atacar en este turno ya que esta {this.estado}");
         }
     }
 
@@ -64,7 +66,7 @@ public class  Pokemon
         // Metodo para reducir la vida del pokemon cuando es atacado
     }
     
-    public void AddHP(int hp)
+    public void AddHP(double hp)
     {
         Hp += hp;
     }
@@ -90,13 +92,18 @@ public class  Pokemon
         if (EstadoDormido.HasValue && EstadoDormido > 0)
         {
             EstadoDormido--;
-            if (EstadoDormido == 0) EstadoDormido = null;
+            if (EstadoDormido == 0)
+            {
+                EstadoDormido = null;
+            }
         }
 
-        if (Envenenado) {
+        if (Envenenado) 
+        {
             RecibirDanio(Hp * 0.05);  // Pierde 5% del HP total si está envenenado
         }
-        if (Quemado){
+        if (Quemado)
+        {
             RecibirDanio(Hp * 0.10);     // Pierde 10% del HP total si está quemado
         }
 
