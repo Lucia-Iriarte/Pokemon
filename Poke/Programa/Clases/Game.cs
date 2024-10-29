@@ -32,7 +32,7 @@ public class Game
         TurnoActual = 1;
     }
 
-    public void JugarTurno()
+    public string JugarTurno(Player jugador1, Player jugador2)
     {
         if (turno == 1)
         {
@@ -40,9 +40,7 @@ public class Game
             // Seleccionar pokemon
             // Atacar
             // Cambiar de pokemon
-            // Verificar si el juego ha terminado
-            turno = 2;
-            TurnoActual += 1;
+            turno = 2; // Cambia de turno para que vaya el otro jugador
         }
         else
         {
@@ -50,10 +48,16 @@ public class Game
             // Seleccionar pokemon
             // Atacar
             // Cambiar de pokemon
-            // Verificar si el juego ha terminado
-            JuegoTerminado(Player jugador1, Player jugador2);
-            turno = 1;
-            TurnoActual += 1;
+            turno = 1; // Idem que arriba
+        }
+        TurnoActual += 1;
+        if (JuegoTerminado(jugador1, jugador2) == true)
+        {
+            return "Juego terminado";
+        }
+        else
+        {
+            return "Siguiente turno!";
         }
     }
 
@@ -64,21 +68,23 @@ public class Game
         jugador1.GetPokemonsInfo();
         jugador2.GetPokemonsInfo();
     }
-    public void JuegoTerminado(Player jugador1, Player jugador2)
+    public bool JuegoTerminado(Player jugador1, Player jugador2)
     {
         jugador1.VidaPokemon();
         jugador2.VidaPokemon();
         if (jugador1.VidaPokemon() == 0)
         {
             Console.WriteLine("El jugador 2 ha ganado");
+            return true;
         }
         else if (jugador2.VidaPokemon() == 0)
         {
             Console.WriteLine($"El jugador 1 ha ganado");
+            return true;
         }
         else
         {
-            
+            return false;
         }
     }
 }
