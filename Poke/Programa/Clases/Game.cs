@@ -51,6 +51,7 @@ public class Game
             // Atacar
             // Cambiar de pokemon
             // Verificar si el juego ha terminado
+            JuegoTerminado(Player jugador1, Player jugador2);
             turno = 1;
             TurnoActual += 1;
         }
@@ -63,9 +64,21 @@ public class Game
         jugador1.GetPokemonsInfo();
         jugador2.GetPokemonsInfo();
     }
-    public void JuegoTerminado()
+    public void JuegoTerminado(Player jugador1, Player jugador2)
     {
-        // Verificar en cada ronda (o a partir de una especificada) si la vida de los 6 pokemones 
-        // de cada jugador es 0; mientras no lo sea, el juego continua
+        jugador1.VidaPokemon();
+        jugador2.VidaPokemon();
+        if (jugador1.VidaPokemon() == 0)
+        {
+            Console.WriteLine("El jugador 2 ha ganado");
+        }
+        else if (jugador2.VidaPokemon() == 0)
+        {
+            Console.WriteLine($"El jugador 1 ha ganado");
+        }
+        else
+        {
+            
+        }
     }
 }

@@ -6,12 +6,14 @@ public class Player
     private List<Pokemon> Pokemones;
     private Pokemon PokemonActual;
     public List<Items> Items;
+    private string nombre { get; set; }
 
     // Constructor
-    public Player()
+    public Player(string nombre, Pokemon PokemonActual)
     {
         Pokemones = new List<Pokemon>();
         this.PokemonActual = PokemonActual;
+        this.nombre = nombre;
         
         Items = new List<Items>();
         // Agrego los items
@@ -28,13 +30,15 @@ public class Player
         
     }
     
-    public void VidaPokemon()
+    public double VidaPokemon()
     {
         double suma = 0;
         foreach (var pokemon in Pokemones)
         {
             suma += pokemon.Hp;
         }
+
+        return suma;
     }
     public bool GetItem(Items items)
     {
