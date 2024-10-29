@@ -11,7 +11,7 @@ public class SpecialAttack : Attack
         Quemar
     }
     
-    public SpecialAttack (string nombre, int daño, Type tipo, EfectoEspecial efecto)
+    public SpecialAttack (string nombre, int daño, string tipo, EfectoEspecial efecto)
     {
         this.Nombre = nombre;
         this.Daño = daño;

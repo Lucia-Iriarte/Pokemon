@@ -9,6 +9,7 @@ public class  Pokemon
     private Type tipo;
     private List<string> listaDeAtaques;
     public string Nombre { get; set; }
+    private int capacidadDeAtacar;
     public int Hp { get; set; }
     public Type Tipo { get; set; }
     public int Ataque { get; set; }
@@ -21,8 +22,12 @@ public class  Pokemon
     public bool Envenenado { get; set; }
     public bool Quemado { get; set; }
     
-    public Pokemon(string nombre, int salud, int ataque)
+    public Pokemon(string nombre, int salud, int ataque, int capacidadDeAtacar)
     {
+        this.nombre = nombre;
+        this.hp = salud;
+        this.Ataque = ataque;
+        this.capacidadDeAtacar = 1;
     }
     
 
@@ -33,7 +38,14 @@ public class  Pokemon
 
     public void Atacar()
     {
-        // Metodo para atacar
+        if (capacidadDeAtacar == 1)
+        {
+            // Atacar
+        }
+        else
+        {
+            Console.WriteLine($"{this.Nombre} no puede atacar en este turno ya que esta Paralizado");
+        }
     }
 
     public void AddAtaque(Attack nuevoAtaque)
@@ -81,9 +93,18 @@ public class  Pokemon
             if (EstadoDormido == 0) EstadoDormido = null;
         }
 
-        if (Envenenado) RecibirDanio(Hp * 0.05);  // Pierde 5% del HP total si está envenenado
-        if (Quemado) RecibirDanio(Hp * 0.10);     // Pierde 10% del HP total si está quemado
-        // falta paraizar
+        if (Envenenado) {
+            RecibirDanio(Hp * 0.05);  // Pierde 5% del HP total si está envenenado
+        }
+        if (Quemado){
+            RecibirDanio(Hp * 0.10);     // Pierde 10% del HP total si está quemado
+        }
+
+        if (Paralizado)
+        {
+            Random random = new Random();
+            int capacidadDeAtacar = random.Next(0,2); // 0 o 1 definen si puede atacar
+        }
     }
     
 }
