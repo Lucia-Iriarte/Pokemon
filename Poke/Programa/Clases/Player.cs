@@ -27,6 +27,7 @@ public class Player
         Items.Add(new RevivirPocion());
         
     }
+    
 
     public bool GetItem(Items items)
     {
@@ -39,16 +40,32 @@ public class Player
             return false;
         }
     }
+    //Metodo para obtener la info de todos los pokemones
+    public void GetPokemonsInfo()
+    {
+        foreach (var pokemon in Pokemones)
+        {
+            Console.WriteLine(pokemon.Nombre);
+            Console.WriteLine(pokemon.Hp);
+        }
+    }
     
+    // Método para obtener el Pokémon actual
+    public Pokemon getPokemonActual()
+    {
+        return PokemonActual;
+    }
+
     public void RemoveItem(Items item)
     {
         Items.Remove(item);
     }
-
     // Método para seleccionar un Pokémon
     public void seleccionPokemon(Pokemon pokemon)
     {
     }
+    
+    // Metodos que cuestan turnos 
 
     // Método para cambiar el Pokémon actual por otro de la lista
     public void cambiarPokemon(Pokemon nuevoPokemon)
@@ -56,8 +73,9 @@ public class Player
     }
 
     // Método para atacar usando el Pokémon actual
-    public void atacarPokemon(Pokemon enemigo)
+    public void atacarPokemon(Pokemon enemigo, Attack ataque)
     {
+        // Seleccionar ataque y atacar a un Pokémon
     }
     
     // Método para usar un item
@@ -65,10 +83,4 @@ public class Player
     {
         item.Usar(objetivo);
     }
-
-    // Método para obtener el Pokémon actual
-    public Pokemon getPokemonActual()
-    {
-        return PokemonActual;
-    }
-}
+}    

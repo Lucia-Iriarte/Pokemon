@@ -3,15 +3,28 @@ namespace Poke.Clases;
 public class Game
 {
     private Pokemon pokemonJugador;
-
+    private int turnoAleatorio { get; set; }
     private Pokemon pokemonOponente;
 
-    private int turnoActual;
+    private int turno;
     // Constructor
     public Pokemon PokemonJugador { get; set; }
     public Pokemon PokemonOponente { get; set; }
     public int TurnoActual { get; set; }
 
+    public void jugadaInicial(Player jugador1, Player jugador2)
+    {
+        Random random = new Random();
+        int primerTurno = random.Next(1, 3);
+        if (primerTurno == 1)
+        {
+            turno = 1;
+        }
+        else
+        {
+            turno = 2;
+        }
+    }
     public Game(Pokemon pokemonJugador, Pokemon pokemonOponente)
     {
         PokemonJugador = pokemonJugador;
@@ -19,23 +32,37 @@ public class Game
         TurnoActual = 1;
     }
 
-    public void JugarTurno(Attack ataqueJugador, Attack ataqueOponente /* aclarar que se puede atacar
-     y/o cambiar de pokemon en el turno, no solamente atacar */ )
+    public void JugarTurno()
     {
-        // Metodo para atacar/recibir daño
-        
-        // Metodo para cambiar de pokemon
+        if (turno == 1)
+        {
+            // Turno del jugador 1
+            // Seleccionar pokemon
+            // Atacar
+            // Cambiar de pokemon
+            // Verificar si el juego ha terminado
+            turno = 2;
+            TurnoActual += 1;
+        }
+        else
+        {
+            // Turno del jugador 2
+            // Seleccionar pokemon
+            // Atacar
+            // Cambiar de pokemon
+            // Verificar si el juego ha terminado
+            turno = 1;
+            TurnoActual += 1;
+        }
     }
 
-    public string InfoTurno()
+    public void InfoTurno(Player jugador1, Player jugador2)
     {
-        /*
-         * El usuario deberia poder solicitar la informacion del turno, como por ejemplo
-         * Ver el estado de los pokemones de los oponentes, el numero de turno que se esta jugando
-         * No se toma como turno jugado
-         */
-        return "info";
-    }
+        Console.WriteLine("Turno: " + TurnoActual);
+        Console.WriteLine($"Información de los pokemones totales del juego:");
+        jugador1.GetPokemonsInfo();
+        jugador2.GetPokemonsInfo();
+}
     public void JuegoTerminado()
     {
         // Verificar en cada ronda (o a partir de una especificada) si la vida de los 6 pokemones 
