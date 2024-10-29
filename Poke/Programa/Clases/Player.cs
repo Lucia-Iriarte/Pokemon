@@ -28,7 +28,14 @@ public class Player
         
     }
     
-
+    public void VidaPokemon()
+    {
+        double suma = 0;
+        foreach (var pokemon in Pokemones)
+        {
+            suma += pokemon.Hp;
+        }
+    }
     public bool GetItem(Items items)
     {
         if (Items.Contains(items))

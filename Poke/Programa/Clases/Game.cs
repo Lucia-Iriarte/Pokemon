@@ -62,7 +62,7 @@ public class Game
         Console.WriteLine($"Información de los pokemones totales del juego:");
         jugador1.GetPokemonsInfo();
         jugador2.GetPokemonsInfo();
-}
+    }
     public void JuegoTerminado()
     {
         // Verificar en cada ronda (o a partir de una especificada) si la vida de los 6 pokemones 
