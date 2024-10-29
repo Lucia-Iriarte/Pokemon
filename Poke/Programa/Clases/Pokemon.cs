@@ -10,7 +10,7 @@ public class  Pokemon
     private List<string> listaDeAtaques;
     public string Nombre { get; set; }
     private int capacidadDeAtacar;
-    public string estado;
+    public string? estado {get; set;}
     public double Hp { get; set; }
     public Type Tipo { get; set; }
     public int Ataque { get; set; }
@@ -85,7 +85,35 @@ public class  Pokemon
     {
         return hp;
     }
+
+    // Verificar si tiene un estado ya aplicado
+    public void AplicarEstado(Pokemon objetivo,string estado)
+    {
+        if (objetivo.estado == null)
+        {
+            objetivo.estado = estado;
+        }
+        else
+        {
+            Console.WriteLine($"{objetivo.Nombre} ya tiene un estado");
+        }
+    }
     
+    // Metodo para que si el jugador le aplica CuraTotal, su estado vuelva a null
+    public void CurarTotalConItem(Pokemon objetivo, Items item, Player jugador)
+    {
+        if (item is CuraTotal && (jugador.GetItem(item) == true))
+        {
+            objetivo.estado = null;
+            jugador.usarItem(item, objetivo);
+            jugador.RemoveItem(item);
+        }
+        else
+        {
+            Console.WriteLine("No se puede usar este item para quitarle el estado al Pokemon");
+        }
+    }
+
     // Métodos para actualizar estados en cada turno
     public void ActualizarEstado()
     {

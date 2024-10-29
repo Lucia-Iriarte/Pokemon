@@ -5,7 +5,7 @@ public class Player
     // Atributos privados
     private List<Pokemon> Pokemones;
     private Pokemon PokemonActual;
-    private List<Items> Items;
+    public List<Items> Items;
 
     // Constructor
     public Player()
@@ -28,6 +28,23 @@ public class Player
         
     }
 
+    public bool GetItem(Items items)
+    {
+        if (Items.Contains(items))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    public void RemoveItem(Items item)
+    {
+        Items.Remove(item);
+    }
+
     // Método para seleccionar un Pokémon
     public void seleccionPokemon(Pokemon pokemon)
     {
@@ -41,6 +58,12 @@ public class Player
     // Método para atacar usando el Pokémon actual
     public void atacarPokemon(Pokemon enemigo)
     {
+    }
+    
+    // Método para usar un item
+    public void usarItem(Items item, Pokemon objetivo)
+    {
+        item.Usar(objetivo);
     }
 
     // Método para obtener el Pokémon actual
