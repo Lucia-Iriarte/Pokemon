@@ -35,12 +35,19 @@ public class  Pokemon
 
     public string EstaVivo()
     {
-        return null;
+        if (Hp > 0)
+        {
+            return "El Pokemon está vivo";
+        }
+        else
+        {
+            return "El Pokemon está muerto";
+        }
     }
 
-    public void Atacar(Pokemon pokemonOponente, Attack ataque)
+    public void Atacar(Pokemon pokemonOponente, Pokemon pokemonUsuario ,Attack ataque)
     {
-        if (capacidadDeAtacar == 1 && !Paralizado)
+        if (capacidadDeAtacar == 1 && (pokemonUsuario.estado == null))
         {
             double danioAtaque = ataque.Daño;
             pokemonOponente.RecibirDanio(danioAtaque);
