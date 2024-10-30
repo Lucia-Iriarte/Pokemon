@@ -30,6 +30,7 @@ public class  Pokemon
         this.Ataque = ataque;
         this.estado = estado;
         this.capacidadDeAtacar = 1;
+        this.ListaDeAtaques = new List<Attack>();
     }
     
 
@@ -45,9 +46,9 @@ public class  Pokemon
         }
     }
 
-    public void Atacar(Pokemon pokemonOponente, Pokemon pokemonUsuario ,Attack ataque)
+    public void Atacar(Pokemon pokemonOponente, Pokemon pokemonUsuario , Attack ataque)
     {
-        if (capacidadDeAtacar == 1 && (pokemonUsuario.estado == null))
+        if (capacidadDeAtacar == 1 )
         {
             double danioAtaque = ataque.Daño;
             pokemonOponente.RecibirDanio(danioAtaque);
@@ -79,9 +80,10 @@ public class  Pokemon
     public void AddHP(double hp)
     {
         Hp += hp;
+        Console.WriteLine($"{this.Nombre} recuperó {hp} puntos de vida.");
     }
 
-    public List<Attack> GetAtaques()
+    public List<Attack> GetAtaques() // falta este método
     {
         return null;
     }
