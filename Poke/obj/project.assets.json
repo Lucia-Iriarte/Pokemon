@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Estudiante UCU\\.nuget\\packages\\": {}
+    "/Users/lucia/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\Poke.csproj",
+      "projectUniqueName": "/Users/lucia/Desktop/pokemon/Pokemon/Poke/Poke.csproj",
       "projectName": "Poke",
-      "projectPath": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\Poke.csproj",
-      "packagesPath": "C:\\Users\\Estudiante UCU\\.nuget\\packages\\",
-      "outputPath": "C:\\p2repos\\trabajos grupales\\NewPokemon\\Pokemon\\Poke\\obj\\",
+      "projectPath": "/Users/lucia/Desktop/pokemon/Pokemon/Poke/Poke.csproj",
+      "packagesPath": "/Users/lucia/.nuget/packages/",
+      "outputPath": "/Users/lucia/Desktop/pokemon/Pokemon/Poke/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Estudiante UCU\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/lucia/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

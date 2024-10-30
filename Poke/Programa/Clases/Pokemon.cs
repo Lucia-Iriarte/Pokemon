@@ -38,15 +38,16 @@ public class  Pokemon
         return null;
     }
 
-    public void Atacar()
+    public void Atacar(Pokemon pokemonOponente, Attack ataque)
     {
-        if (capacidadDeAtacar == 1)
+        if (capacidadDeAtacar == 1 && !Paralizado)
         {
-            // Atacar
+            double danioAtaque = ataque.Daño;
+            pokemonOponente.RecibirDanio(danioAtaque);
         }
         else
         {
-            Console.WriteLine($"{this.Nombre} no puede atacar en este turno ya que esta {this.estado}");
+            Console.WriteLine($"{Nombre} no puede atacar en este turno ya que está {this.estado}");
         }
     }
 
@@ -63,7 +64,9 @@ public class  Pokemon
     }
     public void RecibirDanio(double danio)
     {
-        // Metodo para reducir la vida del pokemon cuando es atacado
+        Hp -= danio;
+        if (Hp < 0) Hp = 0;
+        Console.WriteLine($"{this.Nombre} recibio {danio} puntos de daño. El HP restante:{Hp}");
     }
     
     public void AddHP(double hp)
@@ -141,5 +144,4 @@ public class  Pokemon
             int capacidadDeAtacar = random.Next(0,2); // 0 o 1 definen si puede atacar
         }
     }
-    
 }
