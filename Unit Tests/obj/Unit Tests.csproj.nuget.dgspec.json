@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\p2repos\\trabajos grupales\\Proyecto\\Pokemon\\Unit Tests\\Unit Tests.csproj": {}
+    "/Users/lucia/Desktop/pokemon/Pokemon/Unit Tests/Unit Tests.csproj": {}
   },
   "projects": {
-    "C:\\p2repos\\trabajos grupales\\Proyecto\\Pokemon\\Unit Tests\\Unit Tests.csproj": {
+    "/Users/lucia/Desktop/pokemon/Pokemon/Unit Tests/Unit Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\p2repos\\trabajos grupales\\Proyecto\\Pokemon\\Unit Tests\\Unit Tests.csproj",
+        "projectUniqueName": "/Users/lucia/Desktop/pokemon/Pokemon/Unit Tests/Unit Tests.csproj",
         "projectName": "Unit Tests",
-        "projectPath": "C:\\p2repos\\trabajos grupales\\Proyecto\\Pokemon\\Unit Tests\\Unit Tests.csproj",
-        "packagesPath": "C:\\Users\\Estudiante UCU\\.nuget\\packages\\",
-        "outputPath": "C:\\p2repos\\trabajos grupales\\Proyecto\\Pokemon\\Unit Tests\\obj\\",
+        "projectPath": "/Users/lucia/Desktop/pokemon/Pokemon/Unit Tests/Unit Tests.csproj",
+        "packagesPath": "/Users/lucia/.nuget/packages/",
+        "outputPath": "/Users/lucia/Desktop/pokemon/Pokemon/Unit Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Estudiante UCU\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/lucia/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
